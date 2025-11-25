@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-mulish: font-family: "Mulish", sans-serif;
+}
+
+body {
+  @apply font-mulish;
+}
