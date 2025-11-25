@@ -2,6 +2,15 @@
 
 @theme {
   --font-mulish: font-family: "Mulish", sans-serif;
+
+  --color-pastel-blue: #c2dcfd;
+  --color-bubblegum: #ffd8f4;
+  --color-lime-yellow: #fbf6aa;
+  --color-mint-green: #b0e9ca;
+  --color-muted-yellow: #fcfad9;
+  --color-light-violet: #f1dbf5;
+  --color-muted-blue: #d9e8fc;
+  --color-peachy-pink: #ffdbe3;
 }
 
 body {
