@@ -64,6 +64,7 @@ const NoteForm = ({ notes, setNotes }) => {
 
       [name]: type === "checkbox" ? checked : value,
     });
+    console.log(formData)
   };
 
   const handleSubmit = (e) => {
@@ -95,8 +96,7 @@ const NoteForm = ({ notes, setNotes }) => {
 
   return (
     <>
-      <div onClick={() => setIsVisible(!isVisible)}>
-        {" "}
+      <div className="cursor-pointer" onClick={() => setIsVisible(!isVisible)}>
         {isVisible ? (
           <LuX size={64} color="black" />
         ) : (
@@ -143,7 +143,7 @@ const NoteForm = ({ notes, setNotes }) => {
             defaultChecked={false}
             name="isPinned"
           />
-          <button className="bg-gray-950 text-white rounded-lg py-2 px-4 hover:bg-gray-500 transition cursor-pointer">
+          <button className="mb-4 bg-gray-950 text-white rounded-lg py-2 px-4 hover:bg-gray-500 transition cursor-pointer">
             Add note
           </button>
         </form>
