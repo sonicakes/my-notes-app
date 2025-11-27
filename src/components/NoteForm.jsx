@@ -18,15 +18,12 @@ const NoteForm = ({ notes, setNotes }) => {
   const priorityOptions = [
     {
       name: "High",
-      icon: "🔴",
     },
     {
       name: "Medium",
-      icon: "🟡",
     },
     {
       name: "Low",
-      icon: "🟢",
     },
   ];
 
