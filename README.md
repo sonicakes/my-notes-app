@@ -1,12 +1,17 @@
-# My notes app
+# My Notes App
 
 This is a project based on publicly available app design found on Behance:
 
 - [The Simple Note Taking App](https://www.behance.net/gallery/176885925/The-Simple-Note-Taking-App) 
 
-This project is created to practice with the concept of Forms, Input & Controlled Components in React following this Udemy course:
+This project is created to practice with the concept of Forms, Input & Controlled Components in React, also practising useEffect hook with saving data to local storage,following this Udemy course:
 
 - [Modern React From The Beginning](https://www.udemy.com/course/modern-react-from-the-beginning) 
+
+# Live url
+
+Deployed with Netlify:
+[My Notes App](https://myreactnote.netlify.app/)
 
 ## App features
 
