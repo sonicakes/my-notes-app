@@ -61,7 +61,7 @@ const Note = ({ note, deleteNote, togglePin }) => {
 
       <p className="pt-2 text-sm md:text-base">{note.description}</p>
 
-      <div className="flex justify-end">
+      <div className="flex justify-end mt-2">
         <LuTrash2
           size={20}
           className="cursor-pointer text-gray-500 hover:fill-gray-500 self-end"

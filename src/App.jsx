@@ -1,9 +1,16 @@
 import NotesList from "./components/NotesList";
 import NoteForm from "./components/NoteForm";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
-  const [notes, setNotes] = useState([]);
+ const [notes, setNotes] = useState(() => {
+    const notes = JSON.parse(localStorage.getItem('notes'));
+    return notes || [];
+  });
+
+   useEffect(() => {
+    localStorage.setItem("notes", JSON.stringify(notes));
+  }, [notes]);
 
   const deleteNote = (id) => {
     const confirmDelete = window.confirm(
@@ -26,11 +33,17 @@ const App = () => {
   };
 
   return (
-    <div className="p-4">
-      <h1 className="text-3xl font-bold">My notes</h1>
-      <NoteForm notes={notes} setNotes={setNotes}/>
-      <NotesList notes={notes} deleteNote={deleteNote} togglePin={togglePin}/>
-    </div>
+    <>
+      <NoteForm notes={notes} setNotes={setNotes} />
+      <div className="p-4">
+        <h1 className="text-3xl font-bold mb-5">My notes</h1>
+        <NotesList
+          notes={notes}
+          deleteNote={deleteNote}
+          togglePin={togglePin}
+        />
+      </div>
+    </>
   );
 };
 

@@ -7,8 +7,8 @@ const InputCheckbox = ({
   defaultChecked = false,
 }) => {
   return (
-    <div className="mb-4">
-      <label htmlFor={name}>{label}</label>
+    <div className="mb-4 flex items-center">
+      <label htmlFor={name} className="font-semibold mr-2">{label}</label>
       <input
         type="checkbox"
         name={name}

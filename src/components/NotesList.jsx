@@ -7,6 +7,7 @@ const NotesList = ({ notes, deleteNote, togglePin}) => {
  
   return (
     <>
+      {sortedNotes.length === 0 && <div>no notes have been added yet</div>}
       <div className="grid gap-3 grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
         {sortedNotes.map((note, ind) => (
           <Note key={ind} note={note} deleteNote={deleteNote} togglePin={togglePin}/>
